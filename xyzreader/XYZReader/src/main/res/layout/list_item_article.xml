@@ -2,10 +2,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="8dp"
+    android:layout_margin="@dimen/margin8"
     android:clickable="true"
-    app:cardCornerRadius="4dp"
-    app:cardElevation="5dp"
+    app:cardCornerRadius="@dimen/margin4"
+    app:cardElevation="@dimen/margin5"
     android:focusable="true"
     android:foreground="?selectableItemBackground">
 
@@ -24,18 +24,17 @@
 <LinearLayout
     android:layout_width="match_parent"
     android:orientation="vertical"
-    android:background="#44000000"
+    android:background="@color/black_trans"
     android:layout_height="wrap_content">
         <TextView
             android:id="@+id/article_title"
             style="@style/TextAppearance.AppCompat.Title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingLeft="16dp"
-            android:paddingTop="16dp"
-            android:paddingRight="16dp"
-            android:paddingBottom="4dp"
-
+            android:paddingLeft="@dimen/margin16"
+            android:paddingTop="@dimen/margin16"
+            android:paddingRight="@dimen/margin16"
+            android:paddingBottom="@dimen/margin4"
             android:textColor="@color/ltgray"
             android:ellipsize="end"
             android:maxLines="4" />
@@ -45,11 +44,11 @@
         style="@style/TextAppearance.AppCompat.Small"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp"
-        android:layout_marginTop="5dp"
+        android:paddingLeft="@dimen/margin16"
+        android:paddingRight="@dimen/margin16"
+        android:layout_marginTop="@dimen/margin5"
         android:textColor="@color/ltgray"
-        android:paddingBottom="16dp"
+        android:paddingBottom="@dimen/margin16"
         android:layout_below="@id/article_title"
         android:maxLines="1"
         android:singleLine="true"
